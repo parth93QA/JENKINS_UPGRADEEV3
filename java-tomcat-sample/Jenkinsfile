@@ -24,7 +24,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS'){
                     input message:'Approve PRODUCTION Deployment?'
                 }
-                build job: 'DEPLOY_APP_PROD_ENV'
+                build job: 'DEPLOY_APP_PRODUCTION_ENV'
             }
         }
     }
